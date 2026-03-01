@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Menüsü</title>
+    <style>
+        /* Temel Tasarım Ayarları */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #d35400; /* Restoran teması için turuncu/kahve tonu */
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #e67e22;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 30px;
+        }
+
+        /* Menü Öğesi Yapısı */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 10px;
+        }
+
+        .item-info {
+            flex: 1;
+            padding-right: 15px;
+        }
+
+        .item-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .item-ingredients {
+            font-size: 0.9rem;
+            color: #777;
+            margin: 5px 0 0 0;
+            font-style: italic;
+        }
+
+        .item-price {
+            font-weight: bold;
+            color: #2c3e50;
+            white-space: nowrap;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Lezzet Restoran</h1>
+
+    <h2>Başlangıçlar</h2>
+    <div class="menu-item">
+        <div class="item-info">
+            <p class="item-name">Mercimek Çorbası</p>
+            <p class="item-ingredients">Süzme mercimek, tereyağı, kıtır ekmek.</p>
+        </div>
+        <div class="item-price">85 TL</div>
+    </div>
+
+    <h2>Ana Yemekler</h2>
+    <div class="menu-item">
+        <div class="item-info">
+            <p class="item-name">Izgara Köfte</p>
+            <p class="item-ingredients">Dana kıyma, özel baharatlar, pilav ve közlenmiş biber ile.</p>
+        </div>
+        <div class="item-price">220 TL</div>
+    </div>
+
+    <h2>Tatlılar</h2>
+    <div class="menu-item">
+        <div class="item-info">
+            <p class="item-name">Sütlaç</p>
+            <p class="item-ingredients">Fırınlanmış sütlaç, fındık parçaları.</p>
+        </div>
+        <div class="item-price">95 TL</div>
+    </div>
+
+    <h2>İçecekler</h2>
+    <div class="menu-item">
+        <div class="item-info">
+            <p class="item-name">Ev Yapımı Limonata</p>
+            <p class="item-ingredients">Taze limon, nane yaprakları.</p>
+        </div>
+        <div class="item-price">60 TL</div>
+    </div>
+
+    <footer>Afiyet Olsun!</footer>
+</div>
+
+</body>
+</html>
